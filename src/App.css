@@ -1,0 +1,89 @@
+
+body{
+  background-color: #0c0c0c;
+}
+img{
+  margin: auto;
+}
+.dropdown-menu.show{
+  display: flex;
+  flex-direction: column;
+}
+.categorias{
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  height: 100%;
+}
+.card {
+  border: solid 1px #79ffff;
+  margin: 16px;
+  width: 500px;
+  height: 350px;
+  transform: perspective(0) rotateX(0);
+  box-shadow: 0 10px 20px -6px #000;
+  transition: all 0.5s;
+  border-radius: 4px;
+  background: linear-gradient(231deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0.5) 11%, rgba(255, 255, 255, 0.5) 14%, rgba(255, 255, 255, 0) 27%, rgba(255, 255, 255, 0) 100%);
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+/* .card:hover {
+  background: linear-gradient(231deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 19%, rgba(255, 255, 255, 0.5) 28%, rgba(255, 255, 255, 0.5) 31%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0) 100%), url("https://upload.wikimedia.org/wikipedia/pt/8/82/God_of_War_2018_capa.png");
+  animation: gradient-hover 0.8s ease;
+  cursor: pointer;
+  transform: perspective(20px) rotateX(4deg);
+  box-shadow: 0px 20px 20px -10px #000;
+} */
+
+section.info {
+  opacity: 0;
+  margin-left: 440px;
+  border-radius: 4px;
+  width: 200px;
+  height: fit-content;
+  background: #fff;
+  transition: 0.5s;
+  filter: blur(4px);
+}
+section.info.over {
+  filter: blur(0);
+  opacity: 1;
+  margin-left: 480px;
+}
+section.info h4 {
+  padding: 10px;
+}
+section.info h5 {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+section.info p {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+section.info .image {
+  /* background: url("https://sm.ign.com/t/ign_br/screenshot/default/god-war-analisis_t534.1280.jpg"); */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 120px;
+}
+
+.paginacion{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
