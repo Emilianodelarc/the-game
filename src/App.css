@@ -1,8 +1,12 @@
 
 body{
   background-color: #0c0c0c;
+  overflow: visible !important;
 }
 img{
+  margin: auto;
+}
+.loading{
   margin: auto;
 }
 .dropdown-menu.show{
@@ -36,13 +40,6 @@ img{
   background-position: center center !important;
   background-repeat: no-repeat !important;
 }
-/* .card:hover {
-  background: linear-gradient(231deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 19%, rgba(255, 255, 255, 0.5) 28%, rgba(255, 255, 255, 0.5) 31%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0) 100%), url("https://upload.wikimedia.org/wikipedia/pt/8/82/God_of_War_2018_capa.png");
-  animation: gradient-hover 0.8s ease;
-  cursor: pointer;
-  transform: perspective(20px) rotateX(4deg);
-  box-shadow: 0px 20px 20px -10px #000;
-} */
 
 section.info {
   opacity: 0;
@@ -86,4 +83,19 @@ section.info .image {
   margin-top: 50px;
   display: flex;
   justify-content: center;
+}
+
+
+/* DETAIL ITEMS */
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 600px;
+  margin-top: 70px;
+}
+h2{
+  color: #fff;
+  text-align: center;
 }
