@@ -7,8 +7,11 @@ export const useInfoContext = () => useContext(InfoContext);
 export function InfoProvider({ children }) {
     const [items, setItems] = useState([])
     const itemsFetch =()=>{
-      
-      fetch('https://www.freetogame.com/api/games')
+      const options = {
+        method: 'GET',
+      }
+
+      fetch('https://www.freetogame.com/api/games', options)
         .then(res=> res.json())
         .then(data => {
             

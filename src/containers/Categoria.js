@@ -12,11 +12,13 @@ function Categoria() {
     let itemsPerPage = 12;
   let {id}= useParams()
   let navigate = useNavigate()
-
+  const options = {
+    method: 'GET',
+  }
   useEffect(()=>{
     const endOffset = itemOffset + itemsPerPage;
     const categoryFetch =()=>{
-        fetch(`https://www.freetogame.com/api/games?category=${id}`)
+        fetch(`https://www.freetogame.com/api/games?category=${id}`, options)
         .then(res=> res.json())
         .then(bd => {
           if(bd.status === 0){

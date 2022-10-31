@@ -10,11 +10,13 @@ function Detalle() {
     
     const [itemElegido, setItemElegido]= useState(null)
     let id = useParams()
-    console.log(id);
+    const options = {
+      method: 'GET',
+    }
 
     useEffect(() => {
        const detatilFetch =()=>{
-        fetch(`https://www.freetogame.com/api/game?id=${id.id}`)
+        fetch(`https://www.freetogame.com/api/game?id=${id.id}`,options)
         .then(res=> res.json())
         .then(docu=>setItemElegido(docu))
        }
