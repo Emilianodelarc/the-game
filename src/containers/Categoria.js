@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Cards from '../components/Cards';
 import loading from '../imagen/loading.gif'
 import Menu from '../components/Menu';
-import {useParams} from 'react-router-dom'
+import {useParams, useNavigate} from 'react-router-dom'
 import ReactPaginate from 'react-paginate';
 function Categoria() {
     const [data, setData]= useState([])
@@ -11,6 +11,7 @@ function Categoria() {
     const [itemOffset, setItemOffset] = useState(0);
     let itemsPerPage = 12;
   let {id}= useParams()
+  let navigate = useNavigate()
 
   useEffect(()=>{
     const endOffset = itemOffset + itemsPerPage;
@@ -18,9 +19,14 @@ function Categoria() {
         fetch(`https://www.freetogame.com/api/games?category=${id}`)
         .then(res=> res.json())
         .then(bd => {
-            setData(bd)
+          if(bd.status === 0){
+            navigate('*')
+          }else{
+              setData(bd)
             setPage(bd.slice(itemOffset, endOffset));
             setPageCount(Math.ceil(bd.length / itemsPerPage));
+          }
+          
         })
         .catch(err =>console.error(err))
     }
