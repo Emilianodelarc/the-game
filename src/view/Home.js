@@ -1,10 +1,11 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import Menu from "../components/Menu";
 import ListCards from "../containers/ListCards";
 import {useInfoContext} from '../context/InfoContext'
 import loading from '../imagen/loading.gif'
 function Home() {
-    
+    console.log(useLocation())
     const { items } = useInfoContext();   
     
 

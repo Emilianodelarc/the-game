@@ -11,7 +11,7 @@ function Menu() {
     return (
         <nav className="navbar navbar-light bg-light fixed-top">
             <div className="container-fluid">
-                <Link to={'/'} className="navbar-brand" ><img className='logo' src={logo} alt='logo'/></Link>
+                <Link to={'/home'} className="navbar-brand" ><img className='logo' src={logo} alt='logo'/></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -23,7 +23,7 @@ function Menu() {
                     <div className="offcanvas-body">
                         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li className="nav-item">
-                                <Link to={'/'} className="nav-link active" aria-current="page" href="#">Home</Link>
+                                <Link to={'/home'} className="nav-link active" aria-current="page" href="#">Home</Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

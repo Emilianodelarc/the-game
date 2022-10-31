@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import ReactPlayer from 'react-player'
 
 function NotFound() {
@@ -8,7 +8,7 @@ function NotFound() {
     const handleClick = ()=>{
         setVideo(false)
     }
-
+    console.log(useLocation());
     const handleProgress=(pr)=>{
         if(Math.round(pr.playedSeconds) === 28){
          history('/')
