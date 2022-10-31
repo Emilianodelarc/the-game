@@ -15,13 +15,15 @@ function Categoria() {
   const options = {
     method: 'GET',
     headers: {
-      accept: 'application/json',
-    },
-  }
+      'X-RapidAPI-Key': '91ec1535b4msh741d09130615402p149daajsnd8d41dc50963',
+      'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
+    }
+  };
+  
   useEffect(()=>{
     const endOffset = itemOffset + itemsPerPage;
     const categoryFetch =()=>{
-        fetch(`https://www.freetogame.com/api/games?category=${id}`, options)
+        fetch(`https://free-to-play-games-database.p.rapidapi.com/api/games?category=${id}`, options)
         .then(res=> res.json())
         .then(bd => {
           if(bd.status === 0){
