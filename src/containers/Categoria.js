@@ -14,6 +14,9 @@ function Categoria() {
   let navigate = useNavigate()
   const options = {
     method: 'GET',
+    headers: {
+      accept: 'application/json',
+    },
   }
   useEffect(()=>{
     const endOffset = itemOffset + itemsPerPage;

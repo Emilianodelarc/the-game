@@ -12,6 +12,9 @@ function Detalle() {
     let id = useParams()
     const options = {
       method: 'GET',
+      headers: {
+        accept: 'application/json',
+      },
     }
 
     useEffect(() => {

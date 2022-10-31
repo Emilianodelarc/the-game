@@ -9,6 +9,9 @@ export function InfoProvider({ children }) {
     const itemsFetch =()=>{
       const options = {
         method: 'GET',
+        headers: {
+          accept: 'application/json',
+        },
       }
 
       fetch('https://www.freetogame.com/api/games', options)
