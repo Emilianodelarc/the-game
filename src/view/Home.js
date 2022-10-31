@@ -11,7 +11,7 @@ function Home() {
     return (
         <>
         <Menu />
-        {items.length === 0 ? <img src={loading} alt='loading'/> : <ListCards items={items}/>}
+        {items.length === 0 ? <img className="loading" src={loading} alt='loading'/> : <ListCards items={items}/>}
         </>
     );
 }

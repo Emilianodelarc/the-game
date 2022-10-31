@@ -14,7 +14,7 @@ function ListCards({items}) {
         const endOffset = itemOffset + itemsPerPage;
         setPage(items.slice(itemOffset, endOffset));
         setPageCount(Math.ceil(items.length / itemsPerPage));
-    }, [itemOffset, itemsPerPage]);
+    }, [itemOffset, itemsPerPage,items]);
 
 
 

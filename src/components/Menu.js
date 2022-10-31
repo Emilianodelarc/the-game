@@ -1,12 +1,17 @@
 import React from 'react'
 import {useInfoContext} from '../context/InfoContext'
 import { Link } from 'react-router-dom'
+import logo from '../imagen/logo.png'
 function Menu() {
-    const {rutas}= useInfoContext()
+    const {rutas, sendSearch}= useInfoContext()
+
+   
+
+
     return (
         <nav className="navbar navbar-light bg-light fixed-top">
             <div className="container-fluid">
-                <Link to={'/'} className="navbar-brand" >Offcanvas navbar</Link>
+                <Link to={'/'} className="navbar-brand" ><img className='logo' src={logo} alt='logo'/></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -38,7 +43,7 @@ function Menu() {
                                 </ul>
                             </li>
                         </ul>
-                        <form className="d-flex">
+                        <form className="d-flex" onSubmit={sendSearch}>
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                             <button className="btn btn-outline-success" type="submit">Search</button>
                         </form>

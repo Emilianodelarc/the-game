@@ -43,7 +43,7 @@ function Categoria() {
       {page.length > 0 ? (
             page.map((dat) => <Cards key={dat.id} datos={dat} />)
             ) : (
-            <img src={loading} />
+            <img className='loading' src={loading} />
             )}
     </div>
     <div className="paginacion">

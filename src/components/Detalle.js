@@ -7,7 +7,7 @@ import Menu from './Menu'
 
 
 function Detalle() {
-    const {items} = useInfoContext()
+    
     const [itemElegido, setItemElegido]= useState(null)
     let id = useParams()
     console.log(id);
@@ -29,7 +29,10 @@ function Detalle() {
   return (
     <>
         <Menu/>
+        <div>
+
         { itemElegido ?  <Item dato={itemElegido}/> : <img className='loading' src={loading} alt='loading'/>}
+        </div>
     </>
   )
 }
