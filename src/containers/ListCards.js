@@ -8,7 +8,7 @@ function ListCards({items}) {
     const [page, setPage] = useState([]);
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
-    let itemsPerPage = 12;
+    let itemsPerPage = 15;
     
     useEffect(() => {
         const endOffset = itemOffset + itemsPerPage;

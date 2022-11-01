@@ -9,6 +9,7 @@ function Item({ dato }) {
   console.log(dato.title);
   const {
     developer,
+    minimum_system_requirements,
     freetogame_profile_url,
     game_url,
     genre,
@@ -16,6 +17,7 @@ function Item({ dato }) {
     platform,
     publisher,
     release_date,
+    short_description,
     description,
     thumbnail,
     title,
@@ -40,9 +42,41 @@ function Item({ dato }) {
               </div>))
           }
         </Slide>
-        <div>
-          <h2>{title}</h2>
-        </div>
+        
+        <div key={id} className="container py-md-5">
+            <div className="cuerpo-detail">
+                <div className="row">
+                    <div className="desc1-izq col-md-6">
+                        <img src={thumbnail} className="img-fluid" alt="producto"/>
+                    </div>
+                    <div className="desc1-derch col-md-6 pl-lg-3">
+                        <h2>{title.replace(':','')}</h2>
+                        <ul>DETAIL
+                          <li>PLATFORM: {platform}</li>
+                          <li>GENRE: {genre}</li>
+                          <li>PUBLISHER: {publisher}</li>
+                          <li>DEVELOPER: {developer}</li>
+                          <li>REALESE DATE: {release_date}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="row sub-para-w3pvt my-5">
+
+                    <h3 className="shop-detail">{description}</h3>
+
+                    <p className="mt-3 italic-blue">Minimum System Requirements.</p>
+
+                    <ul>
+                      <li>{minimum_system_requirements.os}</li>
+                      <li>{minimum_system_requirements.processor}</li>
+                      <li>{minimum_system_requirements.memory}</li>
+                      <li>{minimum_system_requirements.graphic}</li>
+                      <li>{minimum_system_requirements.storage}</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div> 
 
     </>
   );

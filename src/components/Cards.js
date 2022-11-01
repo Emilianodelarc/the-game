@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Cards({datos}) {
- 
+  
   return (
     
       <div className="card">
@@ -14,6 +14,7 @@ function Cards({datos}) {
           <i className="fab fa-firefox"></i>
           <i className="fab fa-safari"></i></h5>)}</div>
           <p className="card-text">{datos.short_description}</p>
+          <span className="span-genre">{datos.genre}</span>
           <Link to={`/item/${datos.id}`} className="css-button-shadow-border-sliding--sky">info</Link>
         </div>
       </div>
