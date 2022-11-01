@@ -222,8 +222,14 @@ section.info .image {
   display: flex;
   justify-content: center;
 }
-
-
+.page-link{
+  border: solid 1px rgb(255, 102, 203);
+  background-color: #57cc99 !important;
+  color: #fee;
+}
+.page-item.active .page-link{
+  background-color:rgb(255, 102, 203) !important ;
+}
 /* DETAIL ITEMS */
 .each-slide-effect > div {
   display: flex;
