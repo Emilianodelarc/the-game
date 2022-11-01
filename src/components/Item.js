@@ -63,14 +63,14 @@ function Item({ dato }) {
                 <div className="row sub-para-w3pvt my-5">
 
                     <h3 className="game-detail">{description}</h3>
+                    <p className="mt-3 italic-blue">Minimum System Requirements.</p>
                     {minimum_system_requirements && (
-                    <p className="mt-3 italic-blue">Minimum System Requirements.</p>,
                     <ul>
                       <li>{minimum_system_requirements.os}</li>
                       <li>{minimum_system_requirements.processor}</li>
-                      <li>{minimum_system_requirements.memory}</li>
+                      <li>memory {minimum_system_requirements.memory}</li>
                       <li>{minimum_system_requirements.graphic}</li>
-                      <li>{minimum_system_requirements.storage}</li>
+                      <li>storage {minimum_system_requirements.storage}</li>
                     </ul>)
                     }
                 </div>
