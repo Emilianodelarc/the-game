@@ -277,16 +277,14 @@ h2 {
   font-family: debug;
   font-size: 62px;
 }
-h3 .shop-detail{
+h3 .game-detail{
   text-transform: uppercase;
   font-size: 1.2em;
   letter-spacing: 2px;
   margin: 1.5em 0 2em 0;
   color: #323a40;
 }
-.cuerpo-detail{
-  margin-top: 80px;
-}
+
 p.italic-blue {
   font-style: italic;
   color: #89bff3;
@@ -294,15 +292,7 @@ p.italic-blue {
   font-size: 36px;
 }
 
-.disponible span a {
-  margin: 4% 0;
-  display: block;
-  color: #555555;
-  font-size: 0.8725em;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 #ffffff;
-  text-decoration: underline;
-}
+
 .desc1-derch, li{
  list-style: none;
   color: #fff;
@@ -344,93 +334,9 @@ p.italic-blue {
   text-decoration: line-through;
 }
 
-.social-ficons ul {
-  padding: 0;
-  margin: 0;
-}
-
-.social-ficons ul li {
-  display: inline-block;
-  margin: 0 1em;
-}
-
-.social-ficons ul li a {
-  color: #333;
-  text-align: center;
-  font-size: 15px;
-}
-
-.social-ficons ul li a span.fab.fa-facebook-f {
-  height: 32px;
-  width: 32px;
-  line-height: 32px;
-  background: transparent;
-  margin-right: 4px;
-  color: #3b5998;
-  transition: 0.5s all;
-}
-
-.social-ficons ul li a:hover span.fab.fa-facebook-f {
-  height: 32px;
-  width: 32px;
-  line-height: 32px;
-  background: #3b5998;
-  color: #FFFFFF;
-}
-
-.social-ficons ul li a span.fab.fa-twitter {
-  height: 32px;
-  width: 32px;
-  line-height: 32px;
-  background: transparent;
-  margin-right: 4px;
-  color: #1da1f2;
-  transition: 0.5s all;
-}
-
-.social-ficons ul li a:hover span.fab.fa-twitter {
-  height: 32px;
-  width: 32px;
-  line-height: 32px;
-  background: #1da1f2;
-  color: #FFFFFF;
-}
-
-.social-ficons ul li a span.fab.fa-google-plus-g {
-  height: 32px;
-  width: 32px;
-  line-height: 32px;
-  background: transparent;
-  margin-right: 4px;
-  color: #ea4335;
-  transition: 0.5s all;
-  
-}
-
-.social-ficons ul li a:hover span.fab.fa-google-plus-g {
-  height: 32px;
-  width: 32px;
-  line-height: 32px;
-  background: #ea4335;
-  color: #FFFFFF;
-}
-.loader{
-  width: 340px;
-  margin-top: 80px;
-}
 .container{
   text-align: center;
 }
-.count{
-  margin-bottom: 25px;
-}
-.fin-Comp{
-  display: grid;
-}
-
-
-
-
 
 /* Not Found */
 .video {
