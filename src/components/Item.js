@@ -47,7 +47,7 @@ function Item({ dato }) {
             <div className="cuerpo-detail">
                 <div className="row">
                     <div className="desc1-izq col-md-6">
-                        <img src={thumbnail} className="img-fluid" alt="producto"/>
+                        <img src={thumbnail} className="img-fluid" alt="game"/>
                     </div>
                     <div className="desc1-derch col-md-6 pl-lg-3">
                         <h2>{title.replace(':','')}</h2>
@@ -62,18 +62,17 @@ function Item({ dato }) {
                 </div>
                 <div className="row sub-para-w3pvt my-5">
 
-                    <h3 className="shop-detail">{description}</h3>
-
-                    <p className="mt-3 italic-blue">Minimum System Requirements.</p>
-
+                    <h3 className="game-detail">{description}</h3>
+                    {minimum_system_requirements && (
+                    <p className="mt-3 italic-blue">Minimum System Requirements.</p>,
                     <ul>
                       <li>{minimum_system_requirements.os}</li>
                       <li>{minimum_system_requirements.processor}</li>
                       <li>{minimum_system_requirements.memory}</li>
                       <li>{minimum_system_requirements.graphic}</li>
                       <li>{minimum_system_requirements.storage}</li>
-                    </ul>
-                    
+                    </ul>)
+                    }
                 </div>
             </div>
         </div> 
