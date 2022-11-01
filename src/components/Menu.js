@@ -11,7 +11,7 @@ function Menu() {
     return (
         <nav className="navbar navbar-light bg-light fixed-top">
             <div className="container-fluid">
-                <Link to={'/home'} className="navbar-brand" ><img className='logo' src={logo} alt='logo'/></Link>
+                <Link to={'/home'} className="logo" ><b>G<span>a</span>m<span>e</span>s</b></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span className="navbar-toggler-icon"></span>
                 </button>
