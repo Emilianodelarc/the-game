@@ -18,11 +18,25 @@ body {
 .navbar-toggler {
   border-color: rgb(255, 102, 203) !important;
 }
+.btn-close{
+  position: absolute;
+  right: 2px;
+  margin-bottom: 3px;
+}
+.offcanvas-end{
+  background: rgb(240 173 217) !important;
+}
 .offcanvas-title {
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
     0 0 0.1em #ff4444, 0 10px 3px #000;
   font: 400 5vh "Vibur";
   color: #fee;
+}
+.d-flex{
+  margin-top: 25px;
+}
+.dropdown-menu.show{
+  background: #f4acb8;
 }
 .logo b {
   font: 400 7vh "Vibur";
@@ -69,6 +83,65 @@ body {
   }
 }
 
+/*  */
+.me-2{
+  margin-left: 10px !important;
+}
+.nav-link, .categorias {
+  text-decoration: none;
+  color: #A5999D;
+  font-size: 22px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  position: relative;
+  transition: all 200ms ease;
+}
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #E71250;
+  opacity: 0;
+  transition: all 200ms ease;
+}
+.nav-link .icon {
+  width: 32px;
+  margin-right: 32px;
+  filter: brightness(0) saturate(100%) invert(64%) sepia(7%) saturate(336%) hue-rotate(289deg) brightness(97%) contrast(85%);
+}
+.nav-link{
+  padding-left: 9px !important;
+}
+.nav-link.dropdown-toggle{
+  padding-left: 9px;
+}
+.nav-item a:active{
+  background-color: #FEF0F4;
+  color: #E71250 !important;
+}
+/* .nav-link.active, .nav-link:hover {
+
+  background-color: #FEF0F4;
+  color: #E71250 !important;
+} */
+.categorias:hover{
+  background-color: #FEF0F4;
+  color: #E71250 !important;
+}
+.nav-link.active::before, .nav-link:hover::before {
+  opacity: 1;
+}
+.nav-link.active .icon, .nav-link:hover .icon {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(86%) saturate(5836%) hue-rotate(335deg) brightness(93%) contrast(95%);
+}
+
+/*  */
 #btn-twtr {
   clear: both;
   color: #fff;
