@@ -8,6 +8,7 @@ body {
   background-color: #0c0c0c;
   overflow: visible !important;
   background: #112 url("//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg");
+  padding-right: 0 !important;
 }
 /* menu */
 .navbar {
@@ -571,4 +572,33 @@ div.text a:hover {
     color: red;
     text-decoration: underline;
   }
+}
+
+@media only screen and (max-width: 300px){
+  .container-fluid{
+    margin: 0 !important;
+    flex-direction: column;
+  }
+  .img-card {
+    width: 252px;
+    height: 150px;
+  }
+  
+  section .text{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    z-index: 5;
+    pointer-events: none;
+    height: 200px;
+    width: 250px;
+    object-fit: inherit;
+  }
+
+  .loading {
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-top: 100%;
+}
 }

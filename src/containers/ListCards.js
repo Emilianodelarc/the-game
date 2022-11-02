@@ -35,12 +35,12 @@ function ListCards({items}) {
         </div>
         <div className="paginacion">
             <ReactPaginate
-                nextLabel="next >"
+                nextLabel="next"
                 onPageChange={handlePageClick}
-                pageRangeDisplayed={3}
-                marginPagesDisplayed={2}
+                pageRangeDisplayed={1}
+                marginPagesDisplayed={1}
                 pageCount={pageCount}
-                previousLabel="< previous"
+                previousLabel="prev"
                 pageClassName="page-item"
                 pageLinkClassName="page-link"
                 previousClassName="page-item"
