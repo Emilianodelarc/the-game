@@ -6,7 +6,7 @@ import ListCards from "../containers/ListCards";
 import {useInfoContext} from '../context/InfoContext'
 import loading from '../imagen/loading.gif'
 function Home() {
-    console.log(useLocation())
+    
     const { items } = useInfoContext();   
     
 
