@@ -24,7 +24,7 @@ body {
   margin-bottom: 3px;
 }
 .offcanvas-end{
-  background: rgb(240 173 217) !important;
+  background: gray !important;
 }
 .offcanvas-title {
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
