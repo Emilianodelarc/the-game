@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import Banner from "../components/Banner";
 import Menu from "../components/Menu";
 import ListCards from "../containers/ListCards";
 import {useInfoContext} from '../context/InfoContext'
@@ -12,7 +13,14 @@ function Home() {
     return (
         <>
         <Menu />
-        {items.length === 0 ? <img className="loading" src={loading} alt='loading'/> : <ListCards items={items}/>}
+        
+        {items.length === 0 ? 
+        <img className="loading" src={loading} alt='loading'/> 
+        : 
+        (<>
+        <Banner/>
+        <ListCards items={items}/>
+        </>)}
         </>
     );
 }

@@ -9,8 +9,10 @@ body {
   overflow: visible !important;
   background: #112 url("//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg");
 }
+/* menu */
 .navbar {
   background: #112 url("//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg");
+  z-index: 1000000;
 }
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255,102,203)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
@@ -83,7 +85,6 @@ body {
   }
 }
 
-/*  */
 .me-2{
   margin-left: 10px !important;
 }
@@ -125,11 +126,6 @@ body {
   background-color: #FEF0F4;
   color: #E71250 !important;
 }
-/* .nav-link.active, .nav-link:hover {
-
-  background-color: #FEF0F4;
-  color: #E71250 !important;
-} */
 .categorias:hover{
   background-color: #FEF0F4;
   color: #E71250 !important;
@@ -141,7 +137,92 @@ body {
   filter: brightness(0) saturate(100%) invert(18%) sepia(86%) saturate(5836%) hue-rotate(335deg) brightness(93%) contrast(95%);
 }
 
-/*  */
+/* Banner */
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to top, #fff,transparent);
+  z-index: 10000;
+}
+section .text{
+  z-index: 5000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: none; 
+  pointer-events: none;
+}
+section img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  pointer-events: none;
+}
+section img#man{
+  transform-origin: bottom;
+}
+ section img#perso{
+  width: 100%;
+  position:absolute;
+  left: -296px;
+ }
+.text{
+  position: relative;
+  color: #fff;
+  font-size: 10vw;
+}
+.sec{
+  position: relative;
+  padding: 10px;
+}
+.sec h2{
+  
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #20496a;
+}
+.sec p{
+  font-size: 1.2em;
+  color: #20496a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  List Item*/
+
 #btn-twtr {
   clear: both;
   color: #fff;
@@ -335,6 +416,10 @@ section.info .image {
 .page-item.active .page-link {
   background-color: #4fa095 !important ;
 }
+
+
+
+
 /* DETAIL ITEMS */
 .each-slide-effect > div {
   display: flex;
