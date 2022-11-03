@@ -35,7 +35,7 @@ function Banner() {
     },[])
 
   return (
-    <section>
+    <section className="banner">
         <img src={bg} ref={bgImg} id="bg"/>
         <img src={logo} className='text' id='text'/>
         <img src={man} ref={person} id="perso" /> 
